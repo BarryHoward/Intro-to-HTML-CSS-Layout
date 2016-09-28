@@ -18,8 +18,7 @@ body {
 
 .octocat {
 	float:left;
-	height: 340px;
-	width: 340px;
+	width: 330px;
 	margin: 10px;
 	margin-bottom: 50px;
 }
@@ -54,9 +53,8 @@ img {
 
 .image-footer{
 	border-bottom: 2px solid lightgrey;
-	overflow: auto;
 	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-bottom: 25px;
 	position: relative;
 }
 
@@ -84,13 +82,13 @@ img {
 
 .image-number::before   { content: "#" }
 
-.image-footer::after {
+.image-footer::before {
 	content: "";
-	border-left: 7px solid transparent;
-  	border-right: 7px solid transparent; 
-  	border-top: 7px solid grey;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: #CCCCCC transparent transparent transparent;
   	position: absolute;
-  	right: 4px;
-  	top: 0px;
+  	right: 1px;
+  	top: -3px;
 
 }
